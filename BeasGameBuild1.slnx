@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="BeasGameBuild1/BeasGameBuild1.vcxproj" Id="5e3396cb-9aa1-40f3-8064-5d5df06efae9" />
+</Solution>
