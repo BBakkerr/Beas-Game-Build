@@ -16,13 +16,20 @@ void Player::PlayerMovement()
         character.move({ 0.f, 1.f });
     }
 
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A))
+   
+}
+
+void Player::CatchObject() {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Q) && !holdingObject)
     {
+        holdingObject == true;
         
     }
-
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D))
+}
+void Player::ThrowObject() {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::E) && holdingObject)
     {
-        // TODO: Release the held projectile.
+		holdingObject = false;
     }
+
 }
