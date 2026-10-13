@@ -15,21 +15,24 @@ namespace BeasGameBuild1
         void Update();
         void SpawnEnemy();
         void EnemyMovement();
-        void CatchEnemy();
         void ProjectileMovement();
         void SpawnProjectile();
+		void CatchObject();
+		void ThrowObject();
     };
 
     void game::Init() {}
     void game::PlayerMovement() {}
+	void game::CatchObject() {}
     void game::Update() {}
 	void game::SpawnEnemy() {}
 	void game::EnemyMovement() {}
-	void game::CatchEnemy() {}
+	void game::ThrowObject() {}
 	void game::ProjectileMovement() {}
 	void game::SpawnProjectile() {}
 }
 
+//Showcasing the game through Windows Terminal
 int main()
 {
     sf::RenderWindow window(sf::VideoMode({ 200, 200 }), "SFML works!");
